@@ -13,7 +13,12 @@
     </p>
 
 
-    {{ service_selected }}
+    {% if service_selected %}
+    Thanks for evaulating our service.
+    {% else %}
+    Service not evaulated.
+    {% endif %}
+    
 
 </body>
 </html>
