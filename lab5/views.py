@@ -25,6 +25,14 @@ class HomePageView(View):
 
         return render(request, self.template_name,{'form':form,'my_message':my_message,'service_selected':service_selected})
         
+class ThankYouPageView(View):
+    template_name = 'lab5/thanks.html'
 
+    def get(self, request):
+
+        name = "Kennedy Clift"
+        return render(request, self.template_name,{'my_name':name})
+    
+        
 
         
